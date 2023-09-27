@@ -8,10 +8,27 @@ tags:
 published: true
 ---
 
-Brief Description 1
+
+Brief Description 2
 
 ## Title
 
-Content 1
+Content 2
 
-More Content 1
+More Content 2
+
+```php
+class Dog extends Pet
+{
+    public function __construct(
+        public string $name,
+        public bool $isGoodBoy,
+        public bool $isHappy
+    ) {};
+
+    public function pat(): void
+    {
+        $this->isHappy = true;
+    }
+}
+\```
