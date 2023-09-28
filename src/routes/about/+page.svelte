@@ -1,5 +1,6 @@
 <svelte:head>
 	<title>About Me</title>
+	<meta name="description" content="About Nicolas Anchano" />
 </svelte:head>
 
 <div class="container">
