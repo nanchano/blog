@@ -3,7 +3,13 @@
 </script>
 
 <footer>
-	<p>{config.title} &copy {new Date().getFullYear()}</p>
+	<article class="item">
+		<p class="left">{config.title} &copy {new Date().getFullYear()}</p>
+		<div class="right">
+			<a href="https://kit.svelte.dev">Powered by Svelte</a>
+		</div>
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+	</article>
 </footer>
 
 <style>
@@ -14,5 +20,22 @@
 
 	p {
 		color: var(--text-2);
+		text-align: center;
+	}
+
+	.item p {
+		display: inline-block;
+	}
+	.left {
+		font-size: 1.2em;
+		text-align: left;
+		float: left;
+		width: 50%;
+	}
+	.right {
+		font-size: 1.2em;
+		text-align: right;
+		float: right;
+		width: 50%;
 	}
 </style>
