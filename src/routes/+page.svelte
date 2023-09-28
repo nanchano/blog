@@ -8,6 +8,7 @@
 <svelte:head>
 	<title>{config.title}</title>
 	<meta name="description" content={config.description} />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </svelte:head>
 
 <section>

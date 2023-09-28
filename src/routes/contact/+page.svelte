@@ -1,6 +1,8 @@
 <svelte:head>
 	<title>Contact Me</title>
-	<meta name="description" content="Contact Nicolas Anchano" />
+	<meta name="author" content="Nicolas Anchano" />
+	<meta name="description" content="About Nicolas Anchano" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </svelte:head>
 
 <div class="container">
