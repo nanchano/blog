@@ -1,6 +1,6 @@
 # My personal blog
 
-My [blog]("https://tiburcio.vercel.app") made with Svelte and deployed with Vercel.
+My [blog](https://tiburcio.vercel.app) made with Svelte and deployed with Vercel.
 
 1. `make dev` to run a server with hot reload for development.
 2. `make build` to build for prod.
