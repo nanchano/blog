@@ -4,11 +4,14 @@
 	export let data;
 </script>
 
-<!-- SEO -->
 <svelte:head>
 	<title>{data.meta.title}</title>
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={data.meta.title} />
+	<meta name="author" content="Nicolas Anchano" />
+	<meta name="description" content={data.meta.description} />
+	<meta name="keywords" content={data.meta.tags} />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </svelte:head>
 
 <article>
@@ -32,10 +35,6 @@
 	article {
 		max-inline-size: var(--size-content-3);
 		margin-inline: auto;
-	}
-
-	h1 {
-		text-transform: capitalize;
 	}
 
 	h1 + p {
