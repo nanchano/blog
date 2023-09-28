@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<script type="module">
+			const theme = localStorage.getItem("color-scheme");
 
-<head>
-	<script type="module">
-		const theme = localStorage.getItem("color-scheme");
+			theme
+				? document.documentElement.setAttribute("color-scheme", theme)
+				: localStorage.setItem("color-scheme", "dark");
+		</script>
+	</head>
 
-		theme
-			? document.documentElement.setAttribute("color-scheme", theme)
-			: localStorage.setItem("color-scheme", "dark");
-	</script>
-</head>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link
+			rel="icon"
+			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🦈</text></svg>"
+		/>
+		%sveltekit.head%
+	</head>
 
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width" />
-	%sveltekit.head%
-</head>
-
-<body data-sveltekit-preload-data="hover">
-	<div style="display: contents">%sveltekit.body%</div>
-</body>
-
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
 </html>
