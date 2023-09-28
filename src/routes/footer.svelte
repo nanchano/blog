@@ -8,7 +8,6 @@
 		<div class="right">
 			<a href="https://kit.svelte.dev">Powered by Svelte</a>
 		</div>
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 	</article>
 </footer>
 
