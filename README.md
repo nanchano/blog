@@ -1,38 +1,19 @@
-# create-svelte
+# My personal blog
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+My [blog]("https://tiburcio.vercel.app") made with Svelte and deployed with Vercel.
 
-## Creating a project
+1. `make dev` to run a server with hot reload for development.
+2. `make build` to build for prod.
+3. `make preview` to preview the prod build.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## TBD
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+### Backend
+1. Unit tests
+2. CI workflow
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+### Posts
+1. Neovim config deep dive.
+2. Airflow on GCP + container orchestration.
+3. BigQuery optimization.
+4. End to end development and deployment on k8s.
