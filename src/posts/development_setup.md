@@ -1,9 +1,11 @@
 ---
-title: My development environment
+title: My development setup featuring Alacritty, tmux and Neovim
 description: My portable dev environment featuring alacritty, tmux and neovim
 date: 2023-9-28
 tags:
+  - alacritty
   - neovim
+  - tmux
 published: true
 ---
 
