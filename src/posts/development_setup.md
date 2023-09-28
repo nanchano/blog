@@ -64,6 +64,8 @@ To wrap up, some commands that I use every day:
 6. `ctrl + x` to kill the current pane or window.
 
 ## Neovim
+Neovim is a text editor based on VIM, extensible through a rich plugin ecosystem, and configurable either through VIM script or LUA (recommended)
+
 While we'll dive deep into my current neovim setup in a different article, I want to describe the basics here (as well as the inspiration) to get set up and running quickly.
 
 To install on Arch Linux: `sudo pacman -S neovim`
@@ -75,7 +77,7 @@ The [kickstart](https://github.com/nvim-lua/kickstart.nvim) configuration will g
 
 Some quick highlights from my own [config](https://github.com/nanchano/nvim/blob/main/init.lua):
 1. `Lazy` as plugin manager.
-2. QOL plugins: `nvim-autopairs` to auto pair symbols and `Comment.nvim` to comment lines/blocks easily.
+2. `nvim-autopairs` to auto pair symbols and `Comment.nvim` to comment lines/blocks easily as QOL plugins.
 3. `Telescope` for file/folder searching and management.
 4. `null-ls` just for python formatting, as it's not provided through its LSP.
 5. `Treesitter` for syntax highlighting.
