@@ -1,6 +1,6 @@
 @import '@fontsource/manrope';
 @import '@fontsource/jetbrains-mono';
-@import url(./styles/atom.css);
+@import url(./styles/cb.css);
 
 html {
 	--font-sans: 'Manrope', sans-serif;
