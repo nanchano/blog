@@ -14,8 +14,6 @@ I usually prefer to keep things minimal and portable, which is why the unix phil
 2. tmux as the terminal multiplexer
 3. Neovim as a text editor.
 
-# My development setup
-
 Before we dive deep into each part, I'm attaching to links with various settings that I'll be referencing in the post:
 1. [dotfiles](https://github.com/nanchano/dotfiles/tree/linux) where the tmux and alacritty configs live. Includes a branch for max and another one for linux.
 2. [nvim](https://github.com/nanchano/nvim) where my neovim configuration lives.
@@ -24,6 +22,7 @@ Before we dive deep into each part, I'm attaching to links with various settings
 [Alacritty](https://github.com/alacritty/alacritty) was the first GPU accelerated terminal. It's minimal, cross-platform (although there can be some funkiness/sluggishness when paired with neovim on MacOS) and has sensible defaults while allowing for a myriad of configuration options, including themes, scrolling, keybinds, etc.
 
 To install on Arch Linux: `sudo pacman -S alacritty`
+
 To install on MacOS: `brew install alacritty`
 
 Since alacritty tries to follow the Unix philosophy, it won't have as many features as other terminal emulators such as Kitty or iTerm2. Multiplexing is one of them, which is why it pairs very well with tmux. That said, it does have a `VI` mode, which is very handy when scrolling or looking through history.
@@ -35,15 +34,15 @@ Since alacritty tries to follow the Unix philosophy, it won't have as many featu
 4. Declaring the `TERM` on `env` is needed for tmux compatibility.
 
 ## tmux
-[tmux](https://github.com/tmux/tmux) is a terminal multiplexer that allows you to create, access and control multiple terminals from a single screen. You can also dettach from the current session and attach yourself later. As each tab or split is it's own terminal process, new installations or settings (like env variables) from one may not be present in another, unless you call for them specifically (think `source .bashrc`).
+[tmux](https://github.com/tmux/tmux) is a terminal multiplexer that allows you to create, access and control multiple terminals from a single screen. You can also dettach from the current session and attach yourself later. As each tab or split is its own terminal process, new installations or settings (like env variables) from one may not be present in another, unless you call for them specifically (think `source .bashrc`).
 
-Its defaults can be a bit painful though, and it has a decent ecosystem, including a plugin manager, allowing for extension and overall a better experience.
+Its defaults can be a bit painful though, and it has a decent ecosystem, including a plugin manager (`tpm`), allowing for extension and overall a better experience.
 
 It relies on a `prefix` to execute commands, which defaults to `ctrl + b`
 
 Installation:
 1. Follow the installation screens on the repo.
-2. Install the plugin manager: `git clone https://github.com/tmux-plugins/tpm ~/.config/.tmux/plugins/tpm`
+2. Install tpm: `git clone https://github.com/tmux-plugins/tpm ~/.config/.tmux/plugins/tpm`
 3. Run `tmux source-file .tmux.conf`
 4. Install plugins: `prefix + I`
 
@@ -71,6 +70,7 @@ Neovim is a text editor based on VIM, extensible through a rich plugin ecosystem
 While we'll dive deep into my current neovim setup in a different article, I want to describe the basics here (as well as the inspiration) to get set up and running quickly.
 
 To install on Arch Linux: `sudo pacman -S neovim`
+
 To install on MacOS: `brew install neovim`
 
 First and foremost, new users should go through the basic and built-in tutorial multiple times to get used to some shortcuts as well as learning about the logic behind them. To do so, simply open neovim and type `:Tutor` in normal mode.
