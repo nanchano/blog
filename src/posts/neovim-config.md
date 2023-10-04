@@ -7,7 +7,7 @@ tags:
 published: true
 ---
 
-While I gave a brief overview on Neovim in the [previous](./development_setup) article, including installation and basic pointers, here I'll be deep diving into my current config, the setup, and how it works from a day to day development standpoint.
+While I gave a brief overview on Neovim in the [previous](./development-setup) article, including installation and basic pointers, here I'll be deep diving into my current config, the setup, and how it works from a day to day development standpoint.
 
 As mentioned, the config is based and inspired on [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim), that sets up some building blocks and is made to be extensible by anyone. 
 
