@@ -1,6 +1,6 @@
 ---
 title: Dynamic Factory Design Pattern in Python
-description: Creating dynamic object factories to avoid long if/switch chains
+description: Creating dynamic object factories in Python to avoid long if/switch chains
 date: "2023-10-12"
 tags:
   - python
