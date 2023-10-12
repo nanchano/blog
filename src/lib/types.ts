@@ -1,4 +1,4 @@
-export type Tags = 'neovim' | 'alacritty' | 'tmux'
+export type Tags = 'neovim' | 'alacritty' | 'tmux' | 'python' | 'go' | 'software-architecture' | 'design-patterns'
 
 export type Post = {
 	title: string
